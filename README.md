@@ -1,5 +1,4 @@
-# SixArm.com → Architecture Decision Records <br>
-Date time format using ISO8601 and UTC time zone
+# SixArm.com → Architecture Decision Records →<br> Date time format using ISO8601 and UTC time zone
 
 We want to be able to use a consistent date format and time format that are useful for our typical needs.
 
