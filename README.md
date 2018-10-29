@@ -12,25 +12,15 @@ We choose the format "YYYY-MM-DDTHH:MM:SS.NNNNNNNNN+HH:MM", which is using ISO86
 
   * The format is generally human-readable, sort-orderable, and machine-interoperable.
 
-Formats:
-
-  * Date format: "YYYY-MM-DD".
-
-  * Time format: "HH:MM:SS.NNNNNNNNN".
-
-  * Timezone format: "+HH:MM".
-
-  * Timestamp format: "YYYY-MM-DDTHH:MM:SS.NNNNNNNNN+HH:MM"
-  
 Examples:
 
-  * Date: "2018-01-01" is 2018, January 1st.
+  * Date: "2018-01-01" is 2018 January 1st.
 
   * Time: "00:00:00.000000000" is midnight.
 
-  * Timezone: "+00:00" is Universal Coordinated Time.
+  * Timezone: "+00:00" is UTC.
 
-  * Timestamp: "2018-01-01T00:00:00.000000000+00:00" is 2081, January 1st, midnight, UTC.
+  * Timestamp: "2018-01-01T00:00:00.000000000+00:00" is 2018 January 1st, midnight, UTC.
 
 Details:
 
@@ -42,7 +32,7 @@ Details:
 
   * Sort-friendly orderability, such as "YYYY-MM-DD", rather than than "MM-DD-YYYY".
 
-  * Machine-friendly interoperability, by using a format that favors parsing into fields, such as a nanosecond separator using ".", rather than "," which may interfere with some spreadsheet comma-separated-value parsing.
+  * Machine-friendly interoperability, by using a format that favors parsing into fields. The nanosecond separator is using a period "." rather than a comma "," because a comman may interfere with some spreadsheet comma-separated-value parsing.
     
 Reasoning:
 
